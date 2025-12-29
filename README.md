@@ -25,11 +25,11 @@ graph LR
     B -->|Updates| E[Memory Log<br/>Patterns over time]
     E -.->|Part of| D
     
-    style C fill:#e1f5ff
-    style D fill:#fff4e1
-    style E fill:#f0e1ff
-    style A fill:#e8f5e9
-    style B fill:#fff9c4
+    style C fill:#2d3748,stroke:#4a5568,color:#fff
+    style D fill:#2d3748,stroke:#4a5568,color:#fff
+    style E fill:#2d3748,stroke:#4a5568,color:#fff
+    style A fill:#2d3748,stroke:#4a5568,color:#fff
+    style B fill:#2d3748,stroke:#4a5568,color:#fff
 ```
 
 **The Philosophy:** Trust through transparency. All memory lives in files you control. Claude builds context over time, you see everything it remembers.
