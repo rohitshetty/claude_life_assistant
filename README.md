@@ -2,8 +2,7 @@
 
 A personal coach that remembers, notices patterns, and holds you accountable.
 
-<a href="https://ibb.co/wNJDRX7p"><img src="https://i.ibb.co/Gvsg0L9C/image.png" alt="image" border="0"></a>
-
+<a href="https://www.youtube.com/watch?v=cY3LvkB1EQM"><img src="https://i.ibb.co/Gvsg0L9C/image.png" alt="Claude Life Assistant Demo" border="0"></a>
 [Watch the video](https://www.youtube.com/watch?v=cY3LvkB1EQM)
 
 ## What This Is
