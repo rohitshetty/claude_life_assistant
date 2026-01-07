@@ -2,4 +2,10 @@
 
 settings.local.json
 
+# Personal files - created via /setup-life
+CLAUDE.md
+NOW.md
+journal/
+
+# Other
 marketing
