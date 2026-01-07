@@ -55,6 +55,7 @@ Run `/setup-life` to create your 2-file system. Takes 5 minutes.
 
 Then use:
 - `/start-day` — Morning kickoff
+- `/focus` — Start a focused work session with timer
 - `/check-day` — Quick check-in
 - `/end-day` — Evening review + Memory Log update
 
@@ -150,11 +151,14 @@ Go.
 ### `/start-day`
 Morning ritual. Sets your MIT (Most Important Thing) for the day.
 
+### `/focus`
+Start a focused work session. Claude asks what you're working on, helps break it into steps if needed, then starts a timer. When time's up, you debrief and decide: another round, take a break, or move on.
+
 ### `/check-day`
 Quick check-in. Claude mirrors what you're doing vs what you said you'd do.
 
 ### `/end-day`
-Evening review. Updates Memory Log with what happened and patterns observed.
+Evening review. Captures your day in a journal folder (raw + cleaned versions), updates Memory Log with patterns observed.
 
 ## Examples
 
@@ -191,6 +195,7 @@ If you're using the old single-file system:
 
 - Claude Code CLI (or any Claude interface that supports custom instructions)
 - A folder for your life system
+- Bash (for timer — works on macOS, Linux, and Windows via Git Bash)
 
 ## Credits
 
