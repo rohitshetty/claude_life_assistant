@@ -21,6 +21,28 @@ Wait for both.
 
 ## After they answer
 
+### Anti-Pattern Check (silent analysis, selective intervention)
+
+Read the **Bugs** section from CLAUDE.md. Analyze the stated task against known patterns:
+
+| Bug | Trigger signals | Intervention |
+|-----|-----------------|--------------|
+| **Rabbit holes** | "research", "explore", "look into", "figure out", "understand", "learn about", "investigate", open-ended tasks | "What's the minimum you need to know to move forward? Define done before you start." |
+| **Perfectionism trap** | Vague deliverable, no clear output, "work on", "think about", task has been attempted before | "What's the ugly first version? What does 'good enough' look like?" |
+| **Gets sidelined** | Task not related to MIT or active deadlines, sounds interesting but not urgent | "Is this your MIT right now, or are you avoiding something harder?" |
+
+**Rules:**
+- Only intervene if a pattern match is detected (don't slow down every session)
+- One question max — don't stack interventions
+- If they give a clear answer, proceed. Don't argue.
+- If they push back ("I know what I'm doing"), let it go and proceed
+- Log the intervention in the focus entry: `[warned: rabbit hole]`
+
+**Priority order:** If multiple patterns match, use the first one that applies:
+1. Gets sidelined (most urgent — wrong task entirely)
+2. Rabbit holes (scope risk)
+3. Perfectionism (execution risk)
+
 ### Breakdown (optional)
 
 Ask: "Want me to break this into steps?"
@@ -51,15 +73,26 @@ Once confirmed:
    ```
    - [TIME] Focus: [task] ([X] min)
    ```
+   If anti-pattern intervention was triggered, append the tag:
+   ```
+   - [TIME] Focus: [task] ([X] min) [warned: rabbit hole]
+   ```
 
-2. Run the timer:
+2. Run the timer (include the task in quotes):
    ```bash
-   ./timer.sh [minutes]
+   ./timer.sh [minutes] "[task description]"
    ```
 
 3. Say: "Timer started. Go."
 
-## After timer ends
+## After timer ends (or when user reports back)
+
+### Acknowledge
+
+First, stop the persistent pinging:
+```bash
+touch ~/.claude/focus_ack
+```
 
 ### Interview
 

@@ -18,7 +18,15 @@ Wait.
 
 ## Respond
 
-**Quick reference:**
+### Anti-Pattern Check (quick)
+
+Cross-reference what they're doing with:
+1. Their MIT from NOW.md — if different, ask: "Is this your one thing, or a detour?"
+2. Their Bugs from CLAUDE.md — if they mention "researching" or "exploring", ask: "What's the done state for this?"
+
+Only intervene if it's clearly off-pattern. Check-ins should stay fast.
+
+### Response guide
 
 | They're... | You... |
 |------------|--------|
@@ -28,6 +36,7 @@ Wait.
 | Procrastinating | "What's the resistance?" |
 | Venting | Listen, then "Want me to save that?" |
 | Lost | "What actually matters right now?" |
+| Rabbit-holing | "What's the minimum you need? Define done." |
 | On fire | Stay out of the way |
 
 ## Update (if needed)

@@ -9,3 +9,9 @@ journal/
 
 # Other
 marketing
+
+# Agent logs
+AGENT_WINS/
+
+# Feature planning
+feature_recommendations/

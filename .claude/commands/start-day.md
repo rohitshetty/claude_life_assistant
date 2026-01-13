@@ -45,6 +45,23 @@ Wait. They can pick from Queue or add something new.
 
 ## After they answer
 
+### Anti-Pattern Check (MIT-specific)
+
+If the stated MIT triggers a known bug from CLAUDE.md, ask ONE clarifying question:
+
+| Pattern | Trigger | Question |
+|---------|---------|----------|
+| **Rabbit hole risk** | "research", "explore", "figure out", "understand" — open-ended with no clear deliverable | "What's the concrete output? When will you know you're done?" |
+| **Perfectionism risk** | Vague or has been MIT before without completion | "What's the minimum viable version of this?" |
+| **Scope creep** | MIT has 3+ items or sounds like multiple tasks | "Which one of these is THE one thing?" |
+
+**Rules:**
+- Don't intervene on every MIT — only when pattern match is clear
+- One question max, then proceed with their answer
+- If they push back, accept it and move on
+
+### Update files
+
 - Update NOW.md: Set MIT Today, remove from Queue if picked from there
 - Create/update journal (`journal/YYYY-MM-DD.md`)
 - Add Memory Log entry if pattern observed
