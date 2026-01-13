@@ -75,6 +75,38 @@ Separation = clarity. CLAUDE.md is your operating system. NOW.md is your current
 
 You talk to Claude. Claude maintains the files. No manual file editing required.
 
+## Task Management
+
+Tasks live in `NOW.md` with a simple pipeline:
+
+```
+MIT (Today)        →  What you're doing today (max 3)
+Queue              →  What's next (with dates)
+Blocked            →  Waiting on someone/something
+Icebox             →  Someday/maybe
+```
+
+**Key behaviors:**
+
+- **Every Queue item has a date** — You see how long things have been sitting
+- **Stale task surfacing** — Morning `/start-day` flags items 3+ days old
+- **Forced decisions at 7 days** — "Do it, delegate it, or drop it?"
+- **Inline notes** — Context travels with tasks (`> note` under items)
+- **Incomplete MIT flows back** — End of day, unfinished items return to Queue with today's date
+
+Example Queue:
+```markdown
+## Queue
+- Research competitor pricing (Jan 12)
+- Write launch email (Jan 8) — 5d
+  > Blocked by landing page copy, do after that ships
+- User interviews (Jan 3) — 10d, needs decision
+```
+
+**Why this works:** Tasks don't disappear into a backlog. Age is visible. You're forced to decide on old items instead of letting them rot.
+
+---
+
 ## The Memory Log (Secret Sauce)
 
 In `NOW.md`, Claude maintains a dated log:
@@ -149,16 +181,16 @@ Go.
 </details>
 
 ### `/start-day`
-Morning ritual. Sets your MIT (Most Important Thing) for the day.
+Morning ritual. Shows your Queue with ages, flags stale items, then asks for your MIT (Most Important Thing). Forces decisions on tasks sitting 7+ days.
 
 ### `/focus`
 Start a focused work session. Claude asks what you're working on, helps break it into steps if needed, then starts a timer. When time's up, you debrief and decide: another round, take a break, or move on.
 
 ### `/check-day`
-Quick check-in. Claude mirrors what you're doing vs what you said you'd do.
+Quick check-in. Progress only — no task management overhead. Claude mirrors what you're doing vs what you said you'd do.
 
 ### `/end-day`
-Evening review. Captures your day in a journal folder (raw + cleaned versions), updates Memory Log with patterns observed.
+Evening review. Captures your day in a journal folder (raw + cleaned versions), moves incomplete MIT back to Queue with notes, updates Memory Log with patterns observed.
 
 ## Examples
 
