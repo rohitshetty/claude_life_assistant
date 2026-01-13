@@ -33,9 +33,11 @@ Wait.
 ## Update (if needed)
 
 Only if something changed:
-- **NOW.md**: Update MIT, add blocker to Actions, add Memory Log entry
+- **NOW.md**: Update MIT progress, move task to Blocked if waiting on something
 - **CLAUDE.md**: Only update if new long-term pattern discovered (rare)
-- **journal**: Note the check-in moment
+- **journal**: Mark tasks complete with timestamp
+
+**Do NOT** surface stale tasks or manage the Queue here — that's for morning only. Check-ins stay fast.
 
 ## Close
 

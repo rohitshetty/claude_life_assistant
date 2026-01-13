@@ -107,6 +107,8 @@ Inside that folder, create two files:
 ## Part 4: Update Memory Files
 
 **Update NOW.md:**
+- **Incomplete MIT → Queue**: Move any unfinished MIT items to Queue with today's date (e.g., "Task X (Jan 13)")
+- **Prompt for notes**: If MIT is incomplete, ask "Anything to note on [task]?" — add as inline `> note` under the task in Queue
 - Add Memory Log entry with today's observation
 - Quote important words: *'their exact words'*
 - Note patterns, wins, or blocks
